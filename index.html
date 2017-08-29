@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="title-bar">
+        <div id="title">MALWindow</div>
+        <div id="title-bar-btns">
+            <div class="title-bar-btns btns-left">
+                <button id="profile-btn" class="tooltip"><i class="fa fa-user"><span class="tooltiptext">Profile</span></i></button>
+                <button id="list-btn" class="tooltip"><i class="fa fa-list"><span class="tooltiptext">List</span></i></button>
+                <button id="back-btn"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
+            </div>
+            <div class="title-bar-btns btns-right">
+                <button id="min-btn"><img class="min-max" src="http://imgur.com/ahNeQ6P.png" width="32" height="32"></button>
+                <button id="max-btn"><img class="min-max" src="http://imgur.com/s7JUshr.png" width="32" height="32"></button>
+                <button id="close-btn"><img class="min-max" src="http://imgur.com/oYH2pfy.png" width="32" height="32"></button>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div id="content">
+        <webview id="main-view" src="https://myanimelist.net/login.php" allowpopups></webview>
+    </div>
+    <!---->
+    </div>
+    <script src="default.js"></script>
+</body>
+
+</html>
